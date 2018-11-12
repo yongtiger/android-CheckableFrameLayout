@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         //构造数据
         final List<DataHolder> dataList = new ArrayList<>();
-        for(int i = 0; i< 10; i++){
-            dataList.add(new DataHolder("harvic的blog------"+i,"harvic"));
+        for(int i = 0; i < 10; i++){
+            dataList.add(new DataHolder("harvic的blog------" + i,"harvic"));
         }
         //构造Adapter
         final ListItemAdapter adapter = new ListItemAdapter(this, dataList);
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Click ... " + position, Toast.LENGTH_SHORT).show();
 
                 //        Log.v("TAG", (String)mData.get(position).get("title"));
-                Log.i("TAG", "onClick getCheckedItemCount(): "+listView.getCheckedItemCount());
+                Log.i("TAG", "onClick getCheckedItemCount(): " + listView.getCheckedItemCount());
 
 //                int selectPosition = getListView().getCheckedItemPosition();///单选模式
-//                Log.i("TAG", "onClick selectPosition: "+selectPosition+","+getListView().getAdapter().getItem(selectPosition));
+//                Log.i("TAG", "onClick selectPosition: "+selectPosition+", " + getListView().getAdapter().getItem(selectPosition));
 
                 SparseBooleanArray selectPositions = listView.getCheckedItemPositions();
                 Log.i("TAG", "onClick selectPositions: "+selectPositions);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                for(int i=0;i<dataList.size();i++){
+                for(int i = 0; i < dataList.size(); i++){
                     listView.setItemChecked(i, true);
                 }
             }
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                for(int i=0;i<dataList.size();i++){
+                for(int i = 0; i < dataList.size(); i++){
                     listView.setItemChecked(i, false);
                 }
             }
