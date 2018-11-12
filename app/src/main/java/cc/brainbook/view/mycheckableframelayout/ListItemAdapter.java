@@ -51,14 +51,14 @@ public class ListItemAdapter extends BaseAdapter {
 
             convertView = mInflater.inflate(R.layout.check_list_item, null);
             holder.mTitle = convertView.findViewById(R.id.title);
-            holder.mSubTitile = convertView.findViewById(R.id.subtitle);
+            holder.mSubTitle = convertView.findViewById(R.id.subtitle);
             convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
         }
 
         holder.mTitle.setText(mList.get(position).titleStr);
-        holder.mSubTitile.setText(mList.get(position).subTitleStr);
+        holder.mSubTitle.setText(mList.get(position).subTitleStr);
         return convertView;
     }
 }

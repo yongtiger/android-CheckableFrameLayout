@@ -12,5 +12,5 @@ import android.widget.TextView;
  */
 public class ViewHolder {
     public TextView mTitle;
-    public TextView mSubTitile;
+    public TextView mSubTitle;
 }
