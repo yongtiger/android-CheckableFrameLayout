@@ -48,30 +48,36 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //全部选中按钮的处理
-        Button all_sel = findViewById(R.id.all_sel);
-        Button all_unsel = findViewById(R.id.all_unsel);
+        final Button all_sel = findViewById(R.id.all_sel);
         all_sel.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                for(int i = 0; i < dataList.size(); i++){
+                for(int i = 0, size = dataList.size(); i < size; i++) {
                     listView.setItemChecked(i, true);
                 }
             }
         });
 
         //全部取消按钮处理
+        final Button all_unsel = findViewById(R.id.all_unsel);
         all_unsel.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                for(int i = 0; i < dataList.size(); i++){
+                for(int i = 0, size = dataList.size(); i < size; i++) {
                     listView.setItemChecked(i, false);
                 }
             }
         });
 
+        //反选按钮处理
+        final Button reverse_sel = findViewById(R.id.reverse_sel);
+        reverse_sel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                for(int i = 0, size = dataList.size(); i < size; i++) {
+                    listView.setItemChecked(i, !listView.isItemChecked(i));
+                }
+            }
+        });
     }
 }

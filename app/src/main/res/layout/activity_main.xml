@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <ListView
         android:id="@+id/list"
@@ -18,13 +18,18 @@
     <Button android:id="@+id/all_sel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dip"
+        android:layout_marginBottom="100dip"
         android:layout_gravity="bottom"
-        android:text="全选"
-        />
+        android:text="全选" />
     <Button android:id="@+id/all_unsel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dip"
         android:layout_gravity="bottom"
-        android:text="全部取消"/>
+        android:text="全部取消" />
+    <Button android:id="@+id/reverse_sel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="反选" />
 </FrameLayout>
