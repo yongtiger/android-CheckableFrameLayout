@@ -16,7 +16,6 @@ import android.widget.Checkable;
 import android.widget.FrameLayout;
 
 public class CheckableFrameLayout extends FrameLayout implements Checkable {
-
     public CheckableFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
