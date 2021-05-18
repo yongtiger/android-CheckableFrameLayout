@@ -2,10 +2,6 @@ plugins {
     id 'com.android.library'
 }
 
-///[jitpack#publish]https://jitpack.io/docs/ANDROID/
-apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.yongtiger'
-
 android {
     compileSdkVersion setup.compileSdk
     buildToolsVersion setup.buildTools
